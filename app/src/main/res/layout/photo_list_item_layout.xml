@@ -14,7 +14,11 @@
             android:scaleType="centerCrop"
             android:id="@+id/imageViewBanner"
             android:layout_width="match_parent"
-            android:layout_height="200dp"/>
+            android:layout_height="200dp">
+
+            <tag android:id="@+id/zoomable" android:value="ZoomableViewTag" />
+
+        </ImageView>
 
         <TextView
             android:maxLines="2"

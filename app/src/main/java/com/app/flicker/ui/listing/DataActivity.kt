@@ -2,12 +2,14 @@ package com.app.flicker.ui.listing
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.aghajari.zoomhelper.ZoomHelper
 import com.app.flicker.R
 import com.app.flicker.data.source.IDataRepository
 import com.app.flicker.pojo.Photo
@@ -115,5 +117,9 @@ class DataActivity : AppCompatActivity() {
                 }
             }
         })
+    }
+
+    override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
+        return ZoomHelper.getInstance().dispatchTouchEvent(ev!!,this) || super.dispatchTouchEvent(ev)
     }
 }

@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.aghajari.zoomhelper.ZoomHelper
 import com.app.flicker.R
 import com.app.flicker.pojo.Photo
 import com.bumptech.glide.Glide
@@ -13,6 +14,7 @@ class DataListingAdapter(var list: MutableList<Photo>) :  RecyclerView.Adapter<D
 
     inner class ViewHolder(private val containerView: View) :
         RecyclerView.ViewHolder(containerView) {
+
         fun bind(photo: Photo) {
             if(photo.title.isBlank()) {
                 itemView.textViewTitle.text = "TITLE NOT FOUND"
@@ -22,6 +24,7 @@ class DataListingAdapter(var list: MutableList<Photo>) :  RecyclerView.Adapter<D
                 .load(photoUrl)
                 .error(R.drawable.error_image)
                 .into(itemView.imageViewBanner)
+            ZoomHelper.addZoomableView(itemView.imageViewBanner)
         }
     }
 
