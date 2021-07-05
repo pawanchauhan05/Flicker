@@ -20,8 +20,6 @@
 
         </ImageView>
 
-
-
         <TextView
             android:maxLines="2"
             android:ellipsize="end"
