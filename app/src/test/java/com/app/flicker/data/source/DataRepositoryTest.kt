@@ -8,7 +8,7 @@ import com.app.flicker.data.source.remote.FakeRemoteDataSource
 import com.app.flicker.data.source.remote.IRemoteDataSource
 import com.app.flicker.pojo.Photo
 import com.app.flicker.pojo.ResultState
-import com.app.newsfeed.MainCoroutineRule
+import com.app.flicker.MainCoroutineRule
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication

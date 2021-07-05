@@ -1,4 +1,4 @@
-package com.app.newsfeed
+package com.app.flicker
 
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData

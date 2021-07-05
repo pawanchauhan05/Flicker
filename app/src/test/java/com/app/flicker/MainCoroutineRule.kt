@@ -1,4 +1,4 @@
-package com.app.newsfeed
+package com.app.flicker
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

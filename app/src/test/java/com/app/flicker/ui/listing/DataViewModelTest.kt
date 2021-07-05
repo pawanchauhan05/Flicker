@@ -10,8 +10,8 @@ import com.app.flicker.data.source.remote.IRemoteDataSource
 import com.app.flicker.pojo.EmptyViewState
 import com.app.flicker.pojo.ResultState
 import com.app.flicker.pojo.ViewType
-import com.app.newsfeed.MainCoroutineRule
-import com.app.newsfeed.getOrAwaitValue
+import com.app.flicker.MainCoroutineRule
+import com.app.flicker.getOrAwaitValue
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
