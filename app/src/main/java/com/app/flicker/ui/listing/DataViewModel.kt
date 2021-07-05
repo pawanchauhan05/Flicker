@@ -72,7 +72,6 @@ class DataViewModel@Inject constructor(
                 }
             }
         }.invokeOnCompletion {
-            Log.e("TEMP", "getPhotos: " + it?.message)
             _dataLoading.postValue(false)
         }
     }

@@ -148,4 +148,8 @@ dependencies {
     // For Robolectric tests.
     testImplementation "com.google.dagger:hilt-android-testing:$hilt_version"
     kaptTest "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    // Image scaling
+    implementation "com.aghajari.zoomhelper:ZoomHelper:$zoom_version"
+
 }
